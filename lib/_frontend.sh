@@ -37,6 +37,9 @@ frontend_node_build() {
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/frontend
   npm run build
+  npm install @mui/icons-material -f
+  npm install @mui/system -f
+  npm install @emotion/styled -f
 EOF
 
   sleep 2
